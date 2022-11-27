@@ -10,7 +10,6 @@ bit = platform.architecture()[0]
 if bit == '64bit':
     from ayanrun import main
     main()
-bit = platform.architecture()[0]
-if bit == '32bit':
+elif bit == '32bit':
 	print('Sorry Your Device Is Not Supported')
 	
