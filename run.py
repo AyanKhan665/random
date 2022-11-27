@@ -1,15 +1,2 @@
-import os, platform
-try:
-    import requests
-except:
-    os.system('pip install requests')
-os.system('git pull')
-import requests
-os.system('git pull')
-bit = platform.architecture()[0]
-if bit == '64bit':
-    from ayanrun import main
-    main()
-elif bit == '32bit':
-	print('Sorry Your Device Is Not Supported')
-	
+import ayanrun
+ayanrun.main()
